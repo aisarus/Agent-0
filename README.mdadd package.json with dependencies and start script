@@ -1,0 +1,20 @@
+# Agent Proxy App
+
+Lightweight Node.js app that serves as both:
+- **Frontend** (simple beige-pink UI in `/public/index.html`)
+- **Proxy server** to OpenAI API (hides API key in Replit Secrets)
+
+## Features
+- Run local agent loops (A / B / Judge roles)
+- Proxy `/v1/responses` requests through Express
+- Secure key storage via environment variable `OPENAI_API_KEY`
+- Ready to deploy on [Replit](https://replit.com) or GitHub Pages + server
+
+## Quick start
+1. Clone repo or import into [Replit](https://replit.com).
+2. Add secret `OPENAI_API_KEY` in Replit Secrets.
+3. Press **Run**.  
+   - Server runs on port `3000`.  
+   - Public UI available at `https://<your-repl>.repl.co`.  
+
+## Project structure
